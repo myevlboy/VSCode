@@ -7,4 +7,4 @@ import random
 root = tk.Tk()
 root.withdraw()
 
-print.si("tests")
+messagebox.showinfo("Welcome", "Welcome to the AddNUM program!")
