@@ -7,3 +7,4 @@ import random
 root = tk.Tk()
 root.withdraw()
 
+print.si("tests")
