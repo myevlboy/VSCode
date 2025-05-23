@@ -1,18 +1,15 @@
-from flask import Flask, render_template, url_for
-from flask_sqlalchemy import SQLAlchemy
+from flask import Flask, render_template
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///site.db'
-db = SQLAlchemy(app)
 
-class todo(db.Model):
-    id = db.Column(db.Integer, primary_key=True)
-    content = db.column(db.String(200), nullable=False)
-    dat
 
 @app.route('/')
 def hello_world():
-    return render_template('index.html')
+    return render_template('MainPage.html')
+#second page
+@app.route('/second')
+def second_page():
+    return render_template('SecondPage.html')
 
 if __name__ == '__main__':
     app.run(debug=True)
