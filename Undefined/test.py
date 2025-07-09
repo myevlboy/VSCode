@@ -38,13 +38,3 @@ message = (
 )
 messagebox.showinfo("results", message)
 
-
-
-#testing
-#sadf
-#test
-
- #a
-
-
-#tstsstas
